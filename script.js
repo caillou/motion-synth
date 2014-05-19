@@ -2,6 +2,9 @@
   var play = function () {
     var context, delayGain, delay, osc, lfo;
 
+    document.getElementById('play').style.display = 'none';
+    document.getElementById('desc').style.display = 'block';
+
     context = new webkitAudioContext();
     delayGain = context.createGain();
     delayGain.gain.value = 0;
